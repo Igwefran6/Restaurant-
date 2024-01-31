@@ -1,0 +1,6 @@
+.log
+# Ignore build output
+/target/
+/build/
+#Ignore node_modules
+node_modules/
