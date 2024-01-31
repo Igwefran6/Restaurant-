@@ -1,1 +1,2 @@
-import css from "../styles/index.css";
+import "../styles/index.css";
+import "../styles/normalize.min.css";
