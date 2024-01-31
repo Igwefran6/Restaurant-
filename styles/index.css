@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "jalemberegular";
+    src:
+        url("../assets/fonts/jalembe-font/jalembe-webfont.woff2")
+            format("woff2"),
+        url("../assets/fonts/jalembe-font/jalembe-webfont.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+  --border-color: rgba(100, 100, 100, 1);
+}
+
+.logo {
+    font-family: jalemberegular;
+    padding: 16px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
