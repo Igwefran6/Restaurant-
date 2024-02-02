@@ -1,18 +1,18 @@
 @font-face {
     font-family: "jalemberegular";
     src:
-        url("../assets/fonts/jalembe-font/jalembe-webfont.woff2")
+        url("../../assets/fonts/jalembe-font/jalembe-webfont.woff2")
             format("woff2"),
-        url("../assets/fonts/jalembe-font/jalembe-webfont.woff") format("woff");
+        url("../../assets/fonts/jalembe-font/jalembe-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "cheriregular";
-    src: url("../assets/fonts/cheri-font/cheri___-webfont.woff2")
+    src: url("../../assets/fonts/cheri-font/cheri___-webfont.woff2")
         format("woff2");
-    src: url("../assets/fonts/cheri-font/cheri___-webfont.woff") format("woff");
+    src: url("../../assets/fonts/cheri-font/cheri___-webfont.woff") format("woff");
     font-weight: light;
     font-style: normal;
 }
@@ -20,9 +20,9 @@
 @font-face {
     font-family: "just_believeregular";
     src:
-        url("../assets/fonts/just-believe/just_believe-webfont.woff2")
+        url("../../assets/fonts/just-believe/just_believe-webfont.woff2")
             format("woff2"),
-        url("../assets/fonts/just-believe/just_believe-webfont.woff")
+        url("../../assets/fonts/just-believe/just_believe-webfont.woff")
             format("woff");
     font-weight: normal;
     font-style: normal;
@@ -30,15 +30,17 @@
 
 :root {
     --border-color: rgba(100, 100, 100, 1);
-    font-family: Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        "Gill Sans", "Gill
-  Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+  font-family: Tahoma, Verdana, Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -134,9 +136,12 @@ li {
   width: 100vw;
   margin: auto;
   margin-top: -10px;
+  position: relative;
+  
 }
 .image-with-quote > img{
   width: 100%;
+  filter: brightness(70%);
 }
 
 .fade-bottom {
@@ -149,8 +154,45 @@ li {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 70%; /* Adjust the percentage to control the fade height */
-  background: linear-gradient(to bottom, transparent, white); /* Adjust colors as needed */
-  pointer-events: none; /* Ensure the gradient doesn't interfere with interactions */
+  top: 50%; /* Adjust the percentage to control the fade height */
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none; 
+  
+}
+.fade-top::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 50%; /* Adjust the percentage to control the fade height */
+  background: linear-gradient(to bottom, transparent, white);
+  pointer-events: none; 
+  
+}
+
+ .text-on-image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      font-weight: lighter;
+      transition: all 2s;
+    }
+    
+.quote-author{
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+nav{
+  position: sticky;
+  top: 0px;
+}
+
+.customer-reviews-title{
   
 }
