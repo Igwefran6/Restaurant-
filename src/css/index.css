@@ -57,14 +57,14 @@ body{
     background: var(--border-color);
 }
 
-ul {
+.tab {
     display: flex;
     justify-content: space-around;
     align-items: center;
     list-style: none;
 }
 
-li {
+.tab-content {
     padding: 10px;
     width: 33.3333vw;
     text-align: center;
@@ -72,7 +72,7 @@ li {
     font-family: cheriregular;
 }
 
-.active {
+.active.nav {
     border-bottom: 2px solid var(--border-color);
 }
 
@@ -193,6 +193,6 @@ nav{
   top: 0px;
 }
 
-.customer-reviews-title{
-  
+ul{
+  list-style-type: none;
 }
