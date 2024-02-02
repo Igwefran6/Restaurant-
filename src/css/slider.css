@@ -1,6 +1,6 @@
 .slider-container{
   width: 85%;
-  aspect-ratio: 2/1;
+  /* aspect-ratio: 2/1; */
   margin: auto;
   overflow-x: scroll;
   overflow-y: hidden;
@@ -45,5 +45,9 @@
 
 .slider-nav > ul > li.active{
   width: 20px;
+}
+
+.dot{
+  transition: all .5s;
 }
 
