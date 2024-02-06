@@ -1,49 +1,57 @@
 import "../css/slider.css";
 
 document.addEventListener("DOMContentLoaded", function () {
+    const scrollToElement = document.querySelector(".slider-container");
     const dots = Array.from(document.querySelectorAll(".dot"));
+
+    dots[0].addEventListener("click", () => {
+        scrollToElement.scroll(0, null);
+    });
+    dots[1].addEventListener("click", () => {
+        scrollToElement.scroll(280, null);
+    });
+    dots[2].addEventListener("click", () => {
+        scrollToElement.scroll(580, null);
+    });
+    dots[3].addEventListener("click", () => {
+        scrollToElement.scroll(820, null);
+    });
+
     dots.map((dot, i) =>
         dot.addEventListener("click", event => {
-            let targetItem = `.slide-${i + 1}`;
-            const scrollToElement = document.querySelector(targetItem);
-            scrollToElement.scrollIntoView({ behavior: "smooth" });
-            
-            dots.map(dotRemoveActive =>
-            dotRemoveActive.classList.remove("active"))
-            event.target.classList.add("active")
+            event.target.classList.add("active");
         })
     );
-    
-    let sliderContainer = document.querySelector(".slider-container")
-    const [dot1, dot2, dot3, dot4] = Array.from(document.querySelectorAll(".dot"))
-    
-    sliderContainer.addEventListener("scroll", () =>{
-      let scrollPos = sliderContainer.scrollLeft
-      if (scrollPos >= 0 && scrollPos <= 223) {
-        dot1.classList.add("active")
-        dot2.classList.remove("active")
-        dot3.classList.remove("active")
-        dot4.classList.remove("active")
-      }
-      if (scrollPos >= 224 && scrollPos <= 446) {
-        dot1.classList.remove("active")
-        dot2.classList.add("active")
-        dot3.classList.remove("active")
-        dot4.classList.remove("active")
-      }
-      if (scrollPos >= 447 && scrollPos <= 652) {
-        dot1.classList.remove("active")
-        dot2.classList.remove("active")
-        dot3.classList.add("active")
-        dot4.classList.remove("active")
-      }
-      if (scrollPos >= 653 && scrollPos <= 900) {
-        dot1.classList.remove("active")
-        dot2.classList.remove("active")
-        dot3.classList.remove("active")
-        dot4.classList.add("active")
-      }
-    })
+
+    function removeDot(index) {
+        dots.map(dotRemoveActive => dotRemoveActive.classList.remove("active"));
+        dots[index].classList.add("active");
+    }
+
+    scrollToElement.addEventListener("scroll", () => {
+        let pos = Math.floor(scrollToElement.scrollLeft);
+        console.log(pos);
+        if (pos >= 0 && pos <= 264) {
+            removeDot(0);
+        }
+        if (pos >= 265 && pos <= 573) {
+            removeDot(1);
+        }
+        if (pos >= 574 && pos <= 879) {
+            console.log("Yes");
+            removeDot(2);
+        }
+        if (pos >= 840) {
+            removeDot(3);
+        }
+    });
+
+    let dotIndex = 0;
+  setInterval(function () {
+         dots[dotIndex].click();
+        dotIndex++;
+        if (dotIndex === 4) {
+            dotIndex = 0;
+         }
+    }, 5000);
 });
-
-

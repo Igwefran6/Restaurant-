@@ -3,7 +3,7 @@
 }
 
 .slider-container {
-    width: 85%;
+    width: 400px;
     /* aspect-ratio: 2/1; */
     margin: auto;
     overflow-x: scroll;
@@ -11,15 +11,16 @@
     white-space: normal;
     scroll-snap-type: x mandatory;
     padding-top: 25px;
+    scroll-behavior: smooth;
 }
 
-.slider {
+.my-slider {
     display: flex;
     justify-content: space-evenly;
     width: calc(300px * 4 + 40px);
 }
 
-.slider > div {
+.my-slider > div {
     scroll-snap-align: center;
     height: 150px;
     width: 300px;
@@ -49,11 +50,13 @@
 }
 
 .slider-nav > ul > li.active {
-    width: 20px;
+    width: 12px;
+    height: 12px;
+    outline-offset: 2px;
 }
 
 .dot {
-    transition: all 0.5s;
+    transition: all .2s;
 }
 
 .slide-content{

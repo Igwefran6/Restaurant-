@@ -51,10 +51,11 @@ body{
     font-weight: bold;
 }
 
-.image {
+.image-slider-container {
     height: 65vh;
     width: 100vw;
     background: var(--border-color);
+    overflow: hidden;
 }
 
 .tab {
