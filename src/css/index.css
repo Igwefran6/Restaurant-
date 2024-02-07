@@ -209,3 +209,59 @@ ul{
   object-fit: cover;
   object-position: center;
 }
+
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  place-items: center;
+  grid-gap: 10px;
+  padding: 10px;
+  
+}
+
+.food-item{
+  width: 180px;
+  height: 180px;
+  position: relative;
+  border-radius: 10px 0 10px 0 ;
+}
+
+.food-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  border-radius: 10px ;
+   border: 4px solid rgba(0, 0, 0, .2); 
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.price{
+  position: absolute;
+  bottom: 30px;
+  right: 10px;
+  padding: 2px 8px;
+  background: rgba(0, 0, 0, .6);
+  color: #fff;
+  z-index: 1;
+  border-radius: 10px 0 0 0;
+  
+}
+
+.label{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 1);
+  padding: 2px 8px;
+  color: #fff;
+  z-index: 2;
+  border-radius: 10px 0 10px 0 ;
+}
+
+.menu-page{
+  background: rgba(0, 0, 0, .05);
+}

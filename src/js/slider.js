@@ -1,6 +1,6 @@
 import "../css/slider.css";
 
-document.addEventListener("DOMContentLoaded", function () {
+export default function sliderJs() {
     const scrollToElement = document.querySelector(".slider-container");
     const dots = Array.from(document.querySelectorAll(".dot"));
 
@@ -53,4 +53,4 @@ document.addEventListener("DOMContentLoaded", function () {
             dotIndex = 0;
         }
     }, 5000);
-});
+}
