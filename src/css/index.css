@@ -51,13 +51,6 @@ body{
     font-weight: bold;
 }
 
-.image-slider-container {
-    height: 65vh;
-    width: 100vw;
-    background: var(--border-color);
-    overflow: hidden;
-}
-
 .tab {
     display: flex;
     justify-content: space-around;
@@ -125,7 +118,7 @@ body{
 }
 
 .chefs-img{
-  width: 100vw;
+  width: 65vw;
   margin: auto;
 }
 
@@ -135,6 +128,7 @@ body{
 
 .image-with-quote{
   width: 100vw;
+  height: 75vh;
   margin: auto;
   margin-top: -10px;
   position: relative;
@@ -142,7 +136,10 @@ body{
 }
 .image-with-quote > img{
   width: 100%;
+  height: 100%;
   filter: brightness(70%);
+  object-fit: cover;
+  object-position: top;
 }
 
 .fade-bottom {
@@ -196,4 +193,19 @@ nav{
 
 ul{
   list-style-type: none;
+}
+
+
+.slide-slide-content{
+  height: 50vh;
+  min-width: 100vw;
+  background: grey;
+}
+
+.slide-slide-content img{
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }

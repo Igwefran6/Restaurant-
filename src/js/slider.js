@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     scrollToElement.addEventListener("scroll", () => {
         let pos = Math.floor(scrollToElement.scrollLeft);
-        console.log(pos);
         if (pos >= 0 && pos <= 264) {
             removeDot(0);
         }
@@ -47,11 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     let dotIndex = 0;
-  setInterval(function () {
-         dots[dotIndex].click();
+    setInterval(function () {
+        dots[dotIndex].click();
         dotIndex++;
         if (dotIndex === 4) {
             dotIndex = 0;
-         }
+        }
     }, 5000);
 });
