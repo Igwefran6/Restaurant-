@@ -35,20 +35,40 @@ export default function home() {
                     <span class="quote-author">— Mark Twain</span>
                 </div>
             </section>
+                  <section class="hours text-align-center padding-20">
+              <div class="curly-text large-text">Hours</div>
+              <p>Mondays:</p>
+              <p>07:30 a.m. – 4:30 p.m.</p>
+              <hr />
+
+              <p>Tuesdays, Wednesdays and Thursdays:</p>
+              <p>07:30 a.m. – 07:30 p.m.</p>
+              <hr />
+              <p>Fridays:</p>
+              <p>07:30 a.m. – 10:30 p.m.</p>
+              <hr />
+              <p>Saturdays:</p>
+              <p>07:30 a.m. – 9:30 p.m.</p>
+              <hr />
+              <p class="bold">Happy Hours(20% Off):</p>
+              <p>6:30 p.m. - 10:30 p.m.</p>
+            
+            </section>
             <section class="customer-reviews text-align-center padding-20">
                 <div class="curly-text large-text">reviews</div>
                 <div class="padding-10 small-text">— What they say —</div>
             </section>
+      
             <section>
                 <div class="slider-container">
                     <div class="my-slider">
                         <div class="slide-1 slide-content">
                             <span class="customer-img"
                                 ><img
-                                    src="https://picsum.photos/100/100"
+                                    src="../assets/images/persons/person1.png"
                                     alt="customer image"
                             /></span>
-                            <span class="customer-name">Andrew Tate</span>
+                            <span class="customer-name">Sarah Jumps</span>
                             <span class="customer-comment"
                                 >laboris labore do commodo elit sunt enim enim
                                 nisi consectetur aliquip minim labore
@@ -59,10 +79,11 @@ export default function home() {
                         <div class="slide-2 slide-content">
                             <span class="customer-img"
                                 ><img
-                                    src="https://picsum.photos/100/100"
+                                    src="../assets/images/persons/person2.png"
+                                    
                                     alt="customer image"
                             /></span>
-                            <span class="customer-name">Andrew Tate</span>
+                            <span class="customer-name">James Ruddit</span>
                             <span class="customer-comment"
                                 >laboris labore do commodo elit sunt enim enim
                                 nisi consectetur aliquip minim labore
@@ -73,10 +94,10 @@ export default function home() {
                         <div class="slide-3 slide-content">
                             <span class="customer-img"
                                 ><img
-                                    src="https://picsum.photos/100/100"
+                                    src="../assets/images/persons/person3.png"
                                     alt="customer image"
                             /></span>
-                            <span class="customer-name">Andrew Tate</span>
+                            <span class="customer-name">Ella Tate</span>
                             <span class="customer-comment"
                                 >laboris labore do commodo elit sunt enim enim
                                 nisi consectetur aliquip minim labore
@@ -87,10 +108,10 @@ export default function home() {
                         <div class="slide-4 slide-content">
                             <span class="customer-img"
                                 ><img
-                                    src="https://picsum.photos/100/100"
+                                    src="../assets/images/persons/person4.png"
                                     alt="customer image"
                             /></span>
-                            <span class="customer-name">Andrew Tate</span>
+                            <span class="customer-name">Thomas Black</span>
                             <span class="customer-comment"
                                 >laboris labore do commodo elit sunt enim enim
                                 nisi consectetur aliquip minim labore

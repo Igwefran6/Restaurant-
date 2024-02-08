@@ -14,6 +14,11 @@ import "../../assets/images/people-eating.png";
 import "../../assets/images/image1.png";
 import "../../assets/images/image2.png";
 import "../../assets/images/image3.png";
+import "../../assets/images/persons/person1.png";
+import "../../assets/images/persons/person2.png";
+import "../../assets/images/persons/person3.png";
+import "../../assets/images/persons/person4.png";
+//import "../../assets/images/food-pattern.png";
 
 import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
 
@@ -35,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.home = document.querySelector(".home");
             this.menu = document.querySelector(".menu");
             this.info = document.querySelector(".info");
-           // this.currentPage = (document.querySelector("main").innerHTML = home())
+           this.currentPage = (document.querySelector("main").innerHTML = home())
         }
         eatupsLoader() {
           sliderJs()
@@ -63,5 +68,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let newSite = new Eatups();
-    //newSite.eatupsLoader();
+    newSite.eatupsLoader();
 });
