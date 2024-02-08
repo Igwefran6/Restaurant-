@@ -11,11 +11,14 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/i,
-                use: ["style-loader", "css-loader"]
+                use: ["style-loader", "css-loader"],
+                options: {
+                    url: false
+                }
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                type: "asset/resource",
                 loader: "file-loader",
                 options: {
                     name: "[path][name].[ext]"
