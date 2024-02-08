@@ -1,17 +1,17 @@
-import "../../assets/images/foods/burger.png"
-import "../../assets/images/foods/pizza.png"
-import "../../assets/images/foods/french-fries.png"
-import "../../assets/images/foods/fried-rice.png"
-import "../../assets/images/foods/grilled-cheese.png"
-import "../../assets/images/foods/mac-and-cheese.png"
-import "../../assets/images/foods/chicken-and-bacon-pasta.png"
-import "../../assets/images/foods/shawarma.png"
-import "../../assets/images/foods/spaghetti.png"
-import "../../assets/images/foods/steak.png"
-import "../../assets/images/foods/tacos.png"
+import "../../assets/images/foods/burger.png";
+import "../../assets/images/foods/pizza.png";
+import "../../assets/images/foods/french-fries.png";
+import "../../assets/images/foods/fried-rice.png";
+import "../../assets/images/foods/grilled-cheese.png";
+import "../../assets/images/foods/mac-and-cheese.png";
+import "../../assets/images/foods/chicken-and-bacon-pasta.png";
+import "../../assets/images/foods/shawarma.png";
+import "../../assets/images/foods/spaghetti.png";
+import "../../assets/images/foods/steak.png";
+import "../../assets/images/foods/tacos.png";
 
 export default function menu() {
-  return `
+    return `
   <section class="text-align-center welcome-msg">
                 <h2 class="opacity-80">
                     What would you
@@ -105,5 +105,5 @@ export default function menu() {
                     </div>
 
                 </div>
-            </section>`
+            </section>`;
 }

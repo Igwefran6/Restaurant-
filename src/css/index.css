@@ -265,3 +265,59 @@ ul{
 .menu-page{
   background: rgba(0, 0, 0, .05);
 }
+
+.contacts{
+  text-align: center;
+}
+
+.contacts > p{
+  margin: 4px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.contacts > form{
+  background: rgba(0, 0, 0, .2);
+  padding: 20px;
+  font-size: .9rem;
+  color: rgba(0, 0, 0, .8);
+  width: 350px;
+  margin: auto;
+}
+
+#fname, #lname, #email, #message{
+  padding: 5px;
+  background: rgba(250, 250, 250, 1);
+  border: none;
+  margin-bottom: 4px;
+}
+
+#fname:hover, #lname:hover, #email:hover, #message:hover, #message:focus, #fname:focus, #lname:focus,
+#email:focus{
+  outline: none;
+  border-bottom: 2px solid rgba(0, 0, 0, .6);
+}
+
+legend{
+  text-align: left;
+}
+
+#submit{
+  padding: 5px 25px;
+  border: 2px solid rgba(0, 0, 0, .8);
+  color: rgba(0, 0, 0, .8);
+  
+}
+
+.underline-text{
+  text-decoration: underline;
+}
+
+hr{
+  margin: 10px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}

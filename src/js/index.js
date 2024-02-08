@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
             this.home = document.querySelector(".home");
             this.menu = document.querySelector(".menu");
             this.info = document.querySelector(".info");
-            this.currentPage = (document.querySelector("main").innerHTML = home())
+           // this.currentPage = (document.querySelector("main").innerHTML = home())
         }
         eatupsLoader() {
           sliderJs()
@@ -63,5 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     let newSite = new Eatups();
-    newSite.eatupsLoader();
+    //newSite.eatupsLoader();
 });
