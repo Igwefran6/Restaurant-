@@ -9,6 +9,7 @@ import menu from "./menu.js";
 import info from "./info.js";
 //import "../js/image-slider.js"
 //Resources
+/*
 import "../../assets/images/24eatups-team.png";
 import "../../assets/images/people-eating.png";
 import "../../assets/images/image1.png";
@@ -19,7 +20,7 @@ import "../../assets/images/persons/person2.png";
 import "../../assets/images/persons/person3.png";
 import "../../assets/images/persons/person4.png";
 //import "../../assets/images/food-pattern.png";
-
+*/
 import "../../node_modules/@splidejs/splide/dist/css/splide.min.css";
 
 import Splide from "../../node_modules/@splidejs/splide/dist/js/splide.min.js";
